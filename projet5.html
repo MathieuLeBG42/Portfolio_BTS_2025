@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio Mathieu Abgrall</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio BTS" />
+	<meta name="keywords" content="portfolio, abgrall, mathieu" />
+	<meta name="author" content="Mathieu ABGRALL" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+	
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<h1></i><a href="index.html">Portfolio BTS SIO</a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="index.html">Acceuil</a></li>
+						<li><a class="active" href="projets.html">Projets</a></li>
+						<li><a href="stages.html">Stages</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="veille.html">Veille</a></li>
+						<li><a href="about.html">À propos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="nav-projets">
+		<a href="pdf/Fiche_projet_Infra.pdf" target="_blank"><button>Fiche du projet</button></a>
+		<a href="pdf/Planning_Infra.pdf" target="_blank"><button>Planning Infra</button></a>
+		<a href="https://lacapsule.org/" target="_blank"><button>Site de La Capsule</button></a>
+		<a href="https://www.logicieldrsante.com/" target="_blank"><button>Site de DrSanté</button></a>
+	</div>
+	<div id="fh5co-intro-section">
+		<div class="projets">
+			<div class="liste-projet">
+				<h1>Présentation du projet d'Infrastructure Temporaire</h1>
+				<p>Contexte de stage chez La Capsule</p>
+				<p>Ce projet vise à mettre en place une infrastructure temporaire pour des professionnels de santé
+					afin de leur fournir un milieu généralisé pour installer un logiciel pour professionnels de Santé (DrSanté).</p>
+				<p>Les configurations du logiciel seront transmises aux organismes une fois ces dernières finalisées et sauvegardées</p>
+				<p>Chaque poste de travail repose sur une mini tour Lenovo ThinkCentre, 
+					hébergeant une machine virtuelle Windows 11 déployée via virt-manager sous Linux Mint, 
+					afin de garantir un environnement standardisé, facilement réplicable et maîtrisé. 
+					Tous les postes sont des clones d’une image master, assurant ainsi 
+					l’homogénéité et la sécurité de l’ensemble du parc. Chaque poste dispose également 
+					d’une installation TeamViewer pour l’assistance et la maintenance à distance, 
+					facilitant la gestion technique et le support utilisateur</p>
+			</div>
+			<img src="images/res_temp/install_finale.jpg" alt="Versus Agrégateurs" style="width:70%; height:auto;">
+			<div class="liste-projet">
+				<h1>1. Création du master</h2>
+				<li>Installation de linux Mint sur un disque qui servira de master</li>
+				<li>Mise à jour du poste et installation de virt-manager</li>
+				<li>Préparation de la VM Windows 11 sur virt-manager</li>
+				<li>Installation de TeamViewer en tant que service au démarrage</li>
+			</div>
+			<img src="images/res_temp/virt-manager1.png" alt="Versus Agrégateurs" style="width:70%; height:auto;">
+			<img src="images/res_temp/virt-manager2.png" alt="Versus Agrégateurs" style="width:70%; height:auto;">
+			<div class="liste-projet">
+				<h1>2. Déploiement du master</h1>
+				<li>Mise en place d'une station de clonage avec Clonezilla</li>
+				<li>Déploiement du master sur les disques des 7 postes</li>
+				<li>Numérotation des disques pour la tracabilité</li>
+				<li>Numérotation des Postes en fonction des disques</li>
+				<li>Remise en place des disques en respectant la numérotation</li>
+			</div>
+			<img src="images/res_temp/clonezilla.png" alt="Versus Agrégateurs" style="width:70%; height:auto;">
+			<p>Notes : à ce moment je n'avais jamais créé de serveur de déploiement, sinon j'aurais proposé à mon maître de stage de me laisser mettre en place un serveur FOG pour simplifier le déploiement des postes</p>
+			<div class="liste-projet">
+				<h1>3. Installation de l'infrastructure</h1>
+				<li>Mise en place d'un switch NETGEAR JGS516 (16 ports)</li>
+				<li>Wan connecté sur la box SFR du RESAM</li>
+				<li>Disposition des postes avec clavier, souris et écran</li>
+				<li>Connexion des postes sur le switch</li>
+				<li>Test de la prise du réseau sur les postes</li>
+			</div>
+			<img src="images/res_temp/grosplanswitch2.jpg" alt="Versus Agrégateurs" style="width:70%; height:auto;">
+			<img src="images/res_temp/installation.jpg" alt="Versus Agrégateurs" style="width:70%; height:auto;">
+			<img src="images/res_temp/grosplanposte.jpg" alt="Versus Agrégateurs" style="width:70%; height:auto;">
+			<p>Notes : Certaines VM Windows 11 ne prenaient pas le réseau à cause du conflit des adresses mac réseau mais le problème fut réglé rapidement en changeant les paramètres réseau des machines virtuelles, ce problème aurait pu être règlé au préalable si la VM avant clonage avait subi un sysprep</p>
+			<p>Autre problème : KVM n'apprécie pas les écrans en 4:3 et reste bloqué en 16:9</p>
+			<div class="liste-projet">
+				<h1>4. Acceuil et accompagnement</h1>
+				<li>Acceuil des utilisateurs</li>
+				<li>Association des utilisateurs à leurs postes</li>
+				<li>Listage du numéro de poste associé à chaque utilisateur</li>
+				<li>Installation des lecteurs de cartes USB</li>
+				<li>Soutiens du référent DrSanté à distance</li>
+				<li>Finalisation et départ des utilisateurs</li>
+			</div>
+			<p>Aucune photo ne sera fournit pour cette partie pour des raisons de droit à l'image des utilisateurs</p>
+			<div class="liste-projet">
+				<h1>Conclusion</h1>
+				<p>Ce projet démontre la pertinence des technologies open source pour orchestrer 
+					des environnements Windows performants, tout en assurant la réversibilité et 
+					la rapidité de déploiement. L’approche immuable, combinée à la virtualisation, 
+					limite considérablement les risques de dérive logicielle et facilite la gestion 
+					des incidents. Ce modèle peut être répliqué ou adapté pour d’autres contextes 
+					nécessitant des infrastructures temporaires, évolutives et faciles à administrer.</p>
+			</div>
+		</div>
+	</div>
+	
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">	
+			<div class="col-md-12 fh5co-copyright text-center">
+				<p>Portfolio Mathieu Abgrall 2025</p>
+				<p>Publication et hébergement</p>
+				<p>La société ALWAYSDATA, SARL au capital de 200.000 € immatriculée au RCS de Paris sous le numéro 492 893 490 dont le siège social se trouve 91 rue du Faubourg Saint Honoré - 75008 Paris.</p>
+				<p>Les données personnelles collectées via le formulaire de contact sont utilisées uniquement pour répondre à vos demandes (intérêt légitime). Elles sont conservées pendant 6 mois et ne sont pas transmises à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression, et d'opposition sur vos données. Pour exercer ces droits, contactez-moi à mabgrall78100@gmail.com.</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+	</div>
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

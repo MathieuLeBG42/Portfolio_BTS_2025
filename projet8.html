@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio Mathieu Abgrall</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio BTS" />
+	<meta name="keywords" content="portfolio, abgrall, mathieu" />
+	<meta name="author" content="Mathieu ABGRALL" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+	
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<h1></i><a href="index.html">Portfolio BTS SIO</a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="index.html">Acceuil</a></li>
+						<li><a class="active" href="projets.html">Projets</a></li>
+						<li><a href="stages.html">Stages</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="veille.html">Veille</a></li>
+						<li><a href="about.html">À propos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="nav-projets">
+		<a href="pdf/Fiche_Projet_VPN.pdf" target="_blank"><button>Fiche du projet</button></a>
+		<a href="pdf/Fiche_comparative_VPN.pdf" target="_blank"><button>Tableau Comparatif</button></a>
+		<a href="https://tailscale.com/" target="_blank"><button>Site de Tailscale</button></a>
+	</div>
+	<div id="fh5co-intro-section">
+		<div class="projets">
+			<div class="liste-projet">
+				<img src="images/VPN/logo.png" alt="" style="width:50%; height:auto;">
+				<h1>Projet : Mise en place d’un accès VPN à distance sécurisé (Tailscale + pfSense)</h1>
+				<p>
+                Dans le cadre de mon stage BTS SIO SISR, nous avons mis en place une solution VPN me permettant d’accéder à distance à l’interface ESXi.
+                L’objectif : configurer un tunnel VPN simple, sécurisé et sans ouverture de ports, en utilisant pfSense et le service Tailscale basé sur WireGuard.
+            </p>
+			</div>
+			<img src="images/VPN/interface.png" alt="" style="width:70%; height:auto;">
+			<div class="liste-projet">
+				<h1>Pourquoi Tailscale ?</h1>
+            <p>
+                Tailscale est une solution VPN moderne, simple à déployer et basée sur le protocole WireGuard. Elle permet d’établir des connexions VPN via le port HTTPS (443),
+                sans nécessiter d’IP publique ou de configuration complexe. Elle applique une politique de Zero Trust et propose un chiffrement de bout en bout.
+            </p>
+			</div>
+			<img src="images/VPN/menu.png" alt="" style="width:50%; height:auto;">
+			 <div class="liste-projet">
+            	<h1>Étapes de mise en œuvre</h1>
+            	<h3>1. Analyse du besoin</h3>
+            	<li>Accès distant sécurisé à une interface ESXi via VPN</li>
+            	<li>Facilité de déploiement sans ouverture de port</li>
+            </div>
+			<img src="images/VPN/diagram.png" alt="" style="width:70%; height:auto;">
+			<p>Schéma réseau du projet</p>
+			<div class="liste-projet">
+            	<h3>2. <a href="pdf/Fiche_comparative_VPN.pdf" target="_blank">Choix de la solution</a></h3>
+            	<li>Comparaison entre OpenVPN, WireGuard, Tailscale</li>
+            	<li>Choix de Tailscale pour sa simplicité et sa sécurité</li>
+            </div>
+			<div class="liste-projet">
+             	<h3>3. Installation sur pfSense</h3>
+            	<li>Installation du package Tailscale via le gestionnaire de paquets</li>
+            	<li>Génération d’une clé d’authentification depuis la console Tailscale</li>
+            	<li>Connexion de pfSense au réseau Tailscale</li>
+            </div>
+			<img src="images/VPN/package.png" alt="" style="width:70%; height:auto;">
+			<div class="liste-projet">
+				<h3>4. Configuration du routage</h3>
+            	<li>Ajout de routes pour l’accès à l’interface ESXi</li>
+            	<li>Aucune configuration pare-feu nécessaire grâce à l’authentification Tailscale</li>
+			</div>
+			<img src="images/VPN/rules.png" alt="" style="width:70%; height:auto;">
+			<div class="liste-projet">
+            	<h3>5. Accès distant sécurisé</h3>
+            	<li>Connexion à l’interface ESXi à distance comme si l'on était sur le réseau local</li>
+            	<li>Appareils connectés approuvés manuellement (Zero Trust)</li>
+            	<li>Chiffrement de bout en bout activé</li>
+     		</div>
+			<img src="images/VPN/esxi.png" alt="" style="width:70%; height:auto;">
+			<div class="liste-projet">
+            	<h3>6. Fonctionnalités disponibles</h3>
+            	<li>Version gratuite suffisante pour 100 appareils et 3 utilisateurs</li>
+            	<li>Possibilité d’évolution vers une version entreprise avec SSO, ACLs, etc.</li>
+        	</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">	
+			<div class="col-md-12 fh5co-copyright text-center">
+				<p>Portfolio Mathieu Abgrall 2025</p>
+				<p>Publication et hébergement</p>
+				<p>La société ALWAYSDATA, SARL au capital de 200.000 € immatriculée au RCS de Paris sous le numéro 492 893 490 dont le siège social se trouve 91 rue du Faubourg Saint Honoré - 75008 Paris.</p>
+				<p>Les données personnelles collectées via le formulaire de contact sont utilisées uniquement pour répondre à vos demandes (intérêt légitime). Elles sont conservées pendant 6 mois et ne sont pas transmises à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression, et d'opposition sur vos données. Pour exercer ces droits, contactez-moi à mabgrall78100@gmail.com.</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+	</div>
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

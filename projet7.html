@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio Mathieu Abgrall</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio BTS" />
+	<meta name="keywords" content="portfolio, abgrall, mathieu" />
+	<meta name="author" content="Mathieu ABGRALL" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+	
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<h1></i><a href="index.html">Portfolio BTS SIO</a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="index.html">Acceuil</a></li>
+						<li><a class="active" href="projets.html">Projets</a></li>
+						<li><a href="stages.html">Stages</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="veille.html">Veille</a></li>
+						<li><a href="about.html">À propos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="nav-projets">
+		<a href="pdf/Fiche_projet_Aminweb.pdf" target="_blank"><button>Fiche du projet</button></a>
+	</div>
+	<div id="fh5co-intro-section">
+	<div class="projets">
+		<img src="images/admin_web/WordPress_logo.png" alt="" style="width:50%; height:auto;">
+		<div class="liste-projet">
+			<h1>1. Définition du projet</h1>
+			<p>
+				Le projet m'a été confié début novembre 2024 dans un contexte d’exposition publique. 
+				L'objectif était de préparer un environnement stable basé sur WordPress pour présenter un site web. 
+				Ce site ne peut pas être nommé pour des raisons de confidentialité. 
+				Je devais créer une version "kiosk" prête à être dupliquée sur plusieurs mini-tours. 
+				Chaque poste devait être autonome, sécurisé et figé pour empêcher toute modification par les utilisateurs.
+			</p>
+		</div>
+
+		<div class="liste-projet">
+			<h1>2. Choix des outils</h1>
+			<p>
+				Le CMS WordPress étant déjà utilisé, nous avons conservé cette solution. 
+				phpMyAdmin a été utilisé pour importer et gérer la base de données localement. 
+				Un environnement de test a été mis en place à l’aide de LAMP, permettant une installation rapide du serveur Apache, PHP et MySQL. 
+				Le mode kiosk a été configuré au niveau du système d’exploitation (session verrouillée, lancement automatique du navigateur Firefox en plein écran).
+			</p>
+		</div>
+			<div style="display: flex; gap: 70px; justify-content: center;">
+				<img src="images/admin_web/LAMP-Stack-logo.png.webp" alt="" style="width:30%; height:auto;">
+				<img src="images/admin_web/PhpMyAdmin.png" alt="" style="width:30%; height:auto;">
+			</div>
+			<i>Logos de LAMP et phpMyAdmin</i>
+			<img src="images/admin_web/interface_phpmyadmin.png" alt="" style="width:70%; height:auto;">
+			<i>Interface phpMyAdmin (cette image sert juste d'illustration mais il ne s'agit pas d'une image du projet)</i>
+		<div class="liste-projet">
+			<h1>3. Mise en place du master kiosk</h1>
+			<p>
+				La copie du site WordPress a été importée et testée localement. 
+				La base de données a été restaurée via phpMyAdmin, et les chemins internes du site ont été adaptés à l’environnement local. 
+				Les éléments interactifs inutiles pour la consultation ont été désactivés. 
+				Un script de lancement automatique a été configuré pour démarrer le navigateur en plein écran dès la connexion utilisateur. 
+				Une image système a été créée pour servir de master et être déployée facilement sur toutes les mini-tours.
+			</p>
+		</div>
+
+		<div class="liste-projet">
+			<h1>4. Déploiement et retour d’expérience</h1>
+			<p>
+				Le master a été déployé avec succès sur plusieurs mini-tours en vue de l’exposition. 
+				Chaque poste affichait le site en plein écran sans accès à d’autres fonctions du système. 
+				Cette méthode a permis une présentation fluide, cohérente et sans intervention technique durant l’événement. 
+				La solution pourra être réutilisée pour d'autres projets similaires avec WordPress ou tout autre CMS.
+			</p>
+		</div>
+
+		<p>Ce projet m’a permis d’approfondir mes compétences en administration WordPress, en gestion de base de données avec phpMyAdmin, et en automatisation de déploiement. Il m’a également appris à concevoir une solution durable, sécurisée et réplicable dans un contexte de présentation publique.</p>
+	</div>
+</div>
+	
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">	
+			<div class="col-md-12 fh5co-copyright text-center">
+				<p>Portfolio Mathieu Abgrall 2025</p>
+				<p>Publication et hébergement</p>
+				<p>La société ALWAYSDATA, SARL au capital de 200.000 € immatriculée au RCS de Paris sous le numéro 492 893 490 dont le siège social se trouve 91 rue du Faubourg Saint Honoré - 75008 Paris.</p>
+				<p>Les données personnelles collectées via le formulaire de contact sont utilisées uniquement pour répondre à vos demandes (intérêt légitime). Elles sont conservées pendant 6 mois et ne sont pas transmises à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression, et d'opposition sur vos données. Pour exercer ces droits, contactez-moi à mabgrall78100@gmail.com.</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+	</div>
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

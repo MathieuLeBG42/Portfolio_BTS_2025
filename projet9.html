@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio Mathieu Abgrall</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio BTS" />
+	<meta name="keywords" content="portfolio, abgrall, mathieu" />
+	<meta name="author" content="Mathieu ABGRALL" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<h1></i><a href="index.html">Portfolio BTS SIO</a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="index.html">Acceuil</a></li>
+						<li><a class="active" href="projets.html">Projets</a></li>
+						<li><a href="stages.html">Stages</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="veille.html">Veille</a></li>
+						<li><a href="about.html">À propos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="nav-projets">
+		<a href="pdf/Fiche_projet_XML.pdf" target="_blank"><button>Fiche du projet</button></a>
+		<a href="pdf/presentation_xml.pdf" target="_blank"><button>Présentation du XML</button></a>
+		<a href="https://schneegans.de/windows/unattend-generator/" target="_blank"><button>Site de Schneegans</button></a>
+	</div>
+	
+	<div id="fh5co-intro-section">
+	<div class="projets">
+		<div class="liste-projet">
+			<img src="images/XML/xml_logo.png" alt="" style="width:50%; height:auto;">
+			<h1>Projet : Automatisation de l’installation de Windows avec AutoUnattend.xml</h1>
+			<p>
+				Dans le cadre de ma formation BTS SIO SISR, j’ai réalisé un projet visant à automatiser l’installation de Windows à l’aide d’un fichier <code>AutoUnattend.xml</code>.
+				L’objectif : faciliter le déploiement de systèmes Windows en environnement professionnel, réduire les interventions humaines et uniformiser les installations.
+			</p>
+		</div>
+		<img src="images/XML/interface_generator.png" alt="" style="width:70%; height:auto;">
+		<i>Interface du site de Schneegans</i>
+		<div class="liste-projet">
+			<h1>Pourquoi utiliser AutoUnattend.xml ?</h1>
+			<p>
+				Le fichier XML permet de personnaliser complètement l’installation de Windows :
+				création automatique d’utilisateurs, désactivation de fonctionnalités et logiciels Windows, préinstallation de logiciels, personnalisation graphique,
+				et configuration réseau automatisée. Il réduit fortement le temps et les erreurs humaines lors des déploiements.
+			</p>
+		</div>
+		<img src="images/XML/fonctionnalités.png" alt="" style="width:50%; height:auto;">
+		<i>Quelques fonctionnalités désactivables depuis le site de Schneegans</i>
+		<div class="liste-projet">
+			<h1>Étapes de mise en œuvre</h1>
+			<h3>1. Analyse du besoin</h3>
+			<li>Déploiement rapide et homogène de Windows</li>
+			<li>Suppression des étapes manuelles et des choix par défaut lors de l’installation</li>
+		</div>
+		<img src="images/xml/windows_basique.png" alt="Windows 11 basique" style="width:70%; height:auto;">
+		<i>Windows installé avec le fichier AutoUnattend.xml non modifié</i>
+		<div class="liste-projet">
+			<h3>2. <a href="https://schneegans.de/windows/unattend-generator" target="_blank">Création du fichier XML</a></h3>
+			<li>Utilisation du site <i>Unattend Generator</i> pour créer un fichier AutoUnattend.xml</li>
+			<li>Personnalisation des comptes utilisateurs, options de mise à jour, et programmes à installer</li>
+		</div>
+		<img src="images/xml/code.png" alt="" style="width:70%; height:auto;">
+		<i>Extrait d'un fichier AutoUnattend.xml</i>
+		<div class="liste-projet">
+			<h3>3. Fonctions automatisées incluses</h3>
+			<li>Création automatique de comptes et définition des mots de passe</li>
+			<li>Désactivation possible de Defender, Windows Update, applications inutiles</li>
+			<li>Exécution automatique de scripts PowerShell</li>
+			<li>Installation d'applications à l'aide de commandes winget</li>
+		</div>
+		<img src="images/XML/scripts.png" alt="" style="width:70%; height:auto;">
+		<i>Activation des scripts à l'installation de Windows</i>
+		<div class="liste-projet">
+			<h3>4. Intégration du fichier dans l'ISO Windows</h3>
+			<li>Intégration du fichier <code>AutoUnattend.xml</code> dans l'ISO à l'aide du script de WIMutil avec la commande :</li>
+			<code>irm <a href="https://github.com/memstechtips/WIMUtil/raw/main/src/WIMUtil.ps1" target="_blank">"https://github.com/memstechtips/WIMUtil/raw/main/src/WIMUtil.ps1"</a> | iex</code>
+			<li>L'outil décompile les fichiers d'un ISO Windows cible et intègre automatiquement le XML avant de le recompiler</li>
+			<li>Une fois le XML intégré, ce dernier sera automatiquement pris en compte lors du démarrage sur l'ISO</li>
+		</div>
+		<img src="images/XML/outil.png" alt="" style="width:70%; height:auto;">
+		<i>Interface de l'outil WIMUtil</i>
+		<div class="liste-projet">
+			<h3>5. Résultats obtenus</h3>
+			<li>Installation complète sans interaction utilisateur</li>
+			<li>Personnalisation appliquée dès le premier démarrage</li>
+			<li>Gain de temps significatif et processus réplicable en entreprise</li>
+		</div>
+		<img src="images/XML/windows_xml.png" alt="" style="width:70%; height:auto;">
+		<i>Windows configuré par XML</i>
+		<div class="liste-projet">
+			<h3>6. Avantages et limites</h3>
+			<li>Automatisation poussée : + rapide, + fiable, + cohérent</li>
+			<li>Peut être intégré dans un processus PXE ou USB boot</li>
+			<li>Nécessite de nombreux tests afin d'obtenir un résultat poussé</li>
+		</div>
+	</div>
+	</div>
+
+	
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">	
+			<div class="col-md-12 fh5co-copyright text-center">
+				<p>Portfolio Mathieu Abgrall 2025</p>
+				<p>Publication et hébergement</p>
+				<p>La société ALWAYSDATA, SARL au capital de 200.000 € immatriculée au RCS de Paris sous le numéro 492 893 490 dont le siège social se trouve 91 rue du Faubourg Saint Honoré - 75008 Paris.</p>
+				<p>Les données personnelles collectées via le formulaire de contact sont utilisées uniquement pour répondre à vos demandes (intérêt légitime). Elles sont conservées pendant 6 mois et ne sont pas transmises à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression, et d'opposition sur vos données. Pour exercer ces droits, contactez-moi à mabgrall78100@gmail.com.</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+	</div>
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

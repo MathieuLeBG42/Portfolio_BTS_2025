@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio Mathieu Abgrall</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio BTS" />
+	<meta name="keywords" content="portfolio, abgrall, mathieu" />
+	<meta name="author" content="Mathieu ABGRALL" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+	
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<h1></i><a href="index.html">Portfolio BTS SIO</a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="index.html">Acceuil</a></li>
+						<li><a class="active" href="projets.html">Projets</a></li>
+						<li><a href="stages.html">Stages</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="veille.html">Veille</a></li>
+						<li><a href="about.html">À propos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="nav-projets">
+		<a href="pdf/Fiche_projet_FOG.pdf" target="_blank"><button>Fiche du projet</button></a>
+		<a href="pdf/Tableau_Comparatif_Deploy.pdf" target="_blank"><button>Tableau Comparatif</button></a>
+		<a href="pdf/Procédure_Tech_FOG.pdf" target="_blank"><button>Procédure Technicien</button></a>
+		<a href="pdf/Présentation_Utilisateurs_FOG.pdf" target="_blank"><button>Fiche utilisateur</button></a>
+		
+	</div>
+	<div id="fh5co-intro-section">
+		<div class="projets">
+			<img src="images/example_deploy.png" alt="Illustration déploiemeent" style="width:70%; height:auto;">
+			<div class="liste-projet">
+				<h1>Qu'est-ce que le déploiement de système d'exploitation (OS)</h1>
+				<p>Le déploiement d’un système d’exploitation (OS) est le processus d’installation,
+					 de configuration et de mise à jour d’un OS sur un ordinateur, un serveur ou un appareil,
+					  afin de garantir que les systèmes sont opérationnels, sécurisés et adaptés aux besoins
+					   de l’organisation. Cette démarche implique généralement la création d’une image
+					    standardisée du système (appelé "master"), sa distribution sur 
+						plusieurs appareils via le réseau, puis la personnalisation selon les besoins 
+						spécifiques des utilisateurs ou de l’entreprise. Le déploiement d’OS est une étape 
+						clé dans la gestion de l’infrastructure informatique, permettant d’assurer cohérence, 
+						efficacité et sécurité lors de l’intégration ou du renouvellement de postes de travail</p>
+			</div>
+			<img src="images/fog-logo2.webp" alt="Logo Fog" style="width:50%; height:auto;">
+			<div class="liste-projet">
+				<h1>Présentation du projet de <a href="https://fogproject.org/" target="_blank">Serveur FOG</a></h1>
+				<p>Ce projet vise à mettre en place un serveur FOG pour le déploiement d’images système sur un parc informatique,
+					 en environnement virtualisé (ESXi) avec gestion réseau via un VLAN dédié (VLAN 11) configuré sur pfSense (IP passerelle 172.16.11.254).
+					  La démarche inclut une fiche comparative entre FOG, Clonezilla et AOMEI Backupper,de la documentation utilisateur et technicien ainsi que le détail de l’installation de FOG dans le contexte de la société M2L (projet de fin d'année).</p>
+			</div>
+			<div class="liste-projet">
+				<h1><a href="pdf/Tableau_Comparatif_Deploy.pdf" target="_blank">Fiche Comparative</a> des solutions</h1>
+				<li>FOG est le plus adapté pour le déploiement massif, la gestion centralisée et l’automatisation sur un réseau d’entreprise</li>
+				<li>Clonezilla est puissant mais plus technique et moins ergonomique, adapté aux usages ponctuels ou avancés</li>
+				<li>AOMEI Backupper est simple d’usage et efficace pour le clonage local ou la sauvegarde, mais moins adapté au déploiement en réseau</li>
+			</div>
+			<div class="liste-projet">
+				<h1>Schéma Réseau du projet</h1>
+			<img src="images/schema_fog.png" alt="Schéma Réseau FOG" style="width:70%; height:auto;">
+			</div>
+			<div class="liste-projet">
+				<h1>Installation de FOG sur ESXi</h1>
+				<h3>1. Préparation de l’environnement</h3>
+				<li>Création d'une machine virtuelle sur ESXi dédiée au serveur FOG (ex : 2 vCPU, 4 Go RAM, 128 Go disque)</li>
+				<li>Configurer la carte réseau de la VM pour qu'elle pointe bien sur le VLAN 11</li>
+			</div>
+			<img src="images/serveur_FOG.png" alt="" style="width:50%; height:auto;">
+			<i>Spécifications du serveur FOG</i>
+			<div class="liste-projet">
+				<h3>2. Configuration réseau sur pfSense</h3>
+				<li>Créer le VLAN 11 sur l’interface physique reliée au réseau ESXi</li>
+				<li>Attribution de l’adresse 172.16.22.254/24 à l’interface VLAN 11 sur pfSense</li>
+				<li>Vérifier que le routage est opérationnels sur ce VLAN et qu'aucun DHCP n'est activé.</li>
+			</div>
+			<img src="images/pfsense_fog1.png" alt="" style="width:50%; height:auto;">
+			<i>Interface pfSense du VLAN 11</i>
+			<div class="liste-projet">
+				<h3>3. Installation de l’OS sur la VM</h3>
+				<li>Installation de Ubuntu Server 24.04 sur la machine</li>
+				<li>Configuration de l’adresse IP statique sur le sous-réseau 172.16.11.0/24 (172.16.11.2)</li>
+				<li>Installation de OpenSSH pour utilisation de PuTTy</li>
+			</div>
+			<img src="images/fog_install_ubuntu.png" alt="" style="width:50%; height:auto;">
+			<div class="liste-projet">
+				<h3>4. Installation de FOG</h3>
+				<li>Téléchargement de la dernière version de FOG depuis le site officiel</li>
+				<li>Extraction de l’archive et lancement du script d’installation (./installfog.sh)</li>
+				<li>Indiquer l’IP statique de la VM (172.16.22.2)</li>
+				<li>Choisir l’interface réseau correspondant au VLAN 11</li>
+				<li>Configuration du DHCP via le script (172.16.11.10 à 172.16.11.50)</li>
+			</div>
+			<img src="images/fog_image1.png" alt="Illustration FOG 1" style="width:50%; height:auto;">
+			<i>Lancement du script d'installation FOG</i>
+			<div class="liste-projet">
+				<h3>5. Interface FOG</h3>
+				<li>Accéder à l’interface web de FOG via http://172.16.22.2/fog</li>
+				<li>Connexion à l'utilisateur de base FOG</li>
+				<li>Création des Utilisateurs de l'interface</li>
+			</div>
+			<img src="images/interface_fog.png" alt="Interface FOG" style="width:50%; height:auto;">
+			<img src="images/user_fog.png" alt="Users FOG" style="width:50%; height:auto;">
+			<i>Gestion des Utilisateurs FOG</i>
+			<div class="liste-projet">
+				<h3>6. Création des Masters et tâches de capture</h3>
+				<li>Configuration du Menu PXE pour ne faire apparaître que les options utiles</li>
+				<li>Préparation des postes "masters" Windows 10 et Linux Mint</li>
+				<li>Création des Images sur l'interface FOG</li>
+				<li>Enregistrement des machines "masters" via PXE</li>
+				<li>Association des "masters" à leurs images dédiées</li>
+				<li>Création des tâches de capture et les effectuer en bootant les machines "masters" sur le PXE</li>
+			</div>
+			<img src="images/Images_fog.png" alt="Images FOG" style="width:80%; height:auto;">
+			<i>Gestion des Images sur le serveur</i>
+			<img src="images/hosts_fog.png" alt="Hosts FOG" style="width:80%; height:auto;">
+			<i>Gestion des Hôtes enregistrés sur le serveur</i>
+			<img src="images/tâche_capture_fog.png" alt="Capture FOG" style="width:80%; height:auto;">
+			<i>Gestion des Tâches actives</i>
+			<div class="liste-projet">
+				<h3>6. Création des tâches de déploiement</h3>
+				<li>Enregistrement d'un nouveau poste à déployer depuis le PXE</li>
+				<li>Sur l'interface FOG association de la machine à l'image souhaitée</li>
+				<li>Création de la tâche de Déploiement et démarrage de la machine en réseau</li>
+				<li>La tâche s'effectuera automatiquement jusqu'à ce que le poste soit prêt à l'usage</li>
+			</div>
+			<img src="images/task_fog.png" alt="tâche FOG" style="width:80%; height:auto;">
+			<img src="images/fog_deploy.png" alt="Déploiement FOG" style="width:60%; height:auto;">
+			<i>Déploiement avec l'interface graphique Partclone</i>
+			<img src="images/poste_deployed.png" alt="Poste déployé" style="width:60%; height:auto;">
+			<div class="liste-projet">
+				<h3>7. Fiche de procédure et présentation Utilisateur</h3>
+				<li>Création d'une <a href="pdf/Présentation_Utilisateurs_FOG.pdf" target="_blank">Fiche de présentation Utilisateur</a></li>
+				<li>Création d'une <a href="pdf/Procédure_Tech_FOG.pdf" target="_blank">Fiche de procédure Technicien</a></li>
+			</div>
+		</div>
+	</div>
+	
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">	
+			<div class="col-md-12 fh5co-copyright text-center">
+				<p>Portfolio Mathieu Abgrall 2025</p>
+				<p>Publication et hébergement</p>
+				<p>La société ALWAYSDATA, SARL au capital de 200.000 € immatriculée au RCS de Paris sous le numéro 492 893 490 dont le siège social se trouve 91 rue du Faubourg Saint Honoré - 75008 Paris.</p>
+				<p>Les données personnelles collectées via le formulaire de contact sont utilisées uniquement pour répondre à vos demandes (intérêt légitime). Elles sont conservées pendant 6 mois et ne sont pas transmises à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression, et d'opposition sur vos données. Pour exercer ces droits, contactez-moi à mabgrall78100@gmail.com.</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+	</div>
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
